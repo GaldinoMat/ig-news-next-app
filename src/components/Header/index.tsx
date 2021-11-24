@@ -8,12 +8,23 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <Link href="/" passHref>
-          <Image src="/images/logo.svg" alt="ig.news" width="110" height="30" />
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/logo.svg"
+              alt="ig.news"
+              width="110"
+              height="30"
+            />
+          </a>
         </Link>
         <nav>
-          <a className={styles.active}>Home</a>
-          <a>Posts</a>
+          <Link href="/">
+            <a className={styles.active}>Home</a>
+          </Link>
+          <Link href="/posts">
+            <a>Posts</a>
+          </Link>
         </nav>
         <SignInButton />
       </div>
