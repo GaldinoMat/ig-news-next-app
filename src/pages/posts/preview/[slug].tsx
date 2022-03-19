@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useSession } from "next-auth/client";
-import { Router, useRouter } from "next/dist/client/router";
+import { Router, useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import { RichText } from "prismic-dom";
@@ -27,7 +27,7 @@ export default function PostPreview({ post }: IPostPreviewProp) {
     if (session?.activeSubscription) {
       router.push(`/posts/${post.slug}`)
     }
-  }, [session])
+  }, [post.slug, router, session])
 
   return (
     <>

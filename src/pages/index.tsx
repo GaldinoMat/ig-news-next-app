@@ -27,9 +27,9 @@ export default function Home({ product }: IHomeProps) {
           </h1>
           <p>
             Get access to all publications <br />
-            <span>form {product.amount} monthly</span>
+            <span>for {product.amount} monthly</span>
           </p>
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="ig.news image" />
