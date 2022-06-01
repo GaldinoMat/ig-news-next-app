@@ -5,4 +5,4 @@ The entire site uses the SSR strategy provided by the NEXTJS framework, as well 
 
 ## Deploy
 
-Check out the application here: https://ig-news-next-app.vercel.app/
+Check out the application here: [Ig News](https://ig-news-next-app.vercel.app/)
