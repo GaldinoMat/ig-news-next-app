@@ -32,7 +32,7 @@ export default function Home({ product }: IHomeProps) {
           <SubscribeButton />
         </section>
 
-        <img src="/images/avatar.svg" alt="ig.news image" />
+        <img className={styles.heroImage} src="/images/avatar.svg" alt="ig.news image" />
       </main>
     </>
   );

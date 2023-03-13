@@ -9,12 +9,12 @@
   align-items: center;
   justify-content: space-between;
 
-  img {
+  .heroImage {
     display: none;
   }
 
   @media screen and (min-width: 1024px) {
-    img {
+    .heroImage {
       display: block;
     }
   }
